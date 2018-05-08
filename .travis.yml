@@ -1,0 +1,32 @@
+language: node_js
+
+node_js: stable
+
+install:
+  - npm install
+
+script:
+  - hexo clean
+  - hexo generate
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name $GIT_USER-NAME 
+  - git config user.email $GIT_USER-EMAIL
+  - git add .
+  - git commit -m "update repo"
+  - git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_REMOTE}" master:master
+
+branches:
+  only:
+    - master
+
+after_deploy:
+  - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh success $WEBHOOK_URL
+after_failure:
+  - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh failure $WEBHOOK_URL
