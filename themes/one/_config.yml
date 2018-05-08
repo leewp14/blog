@@ -8,16 +8,16 @@ img:
     avatar: "https://q1.qlogo.cn/headimg_dl?bs=1106996185&dst_uin=1106996185&spec=100&url_enc=0&referer=bu_interface&term_type=PC"
     # 首页左边图片 多个随机
     left_pic: 
-      - "/img/home.jpg"
+      - "./img/home.jpg"
     # 首页右边图片 多个随机 (移动端不显示)
     right_pic:
-      - "/img/right_pic.jpg"
+      - "./img/right_pic.jpg"
     # 默认文章背景 多个随机
     post_thumbnail: 
-      - "/img/二次元/下雨.jpg"
+      - "./img/二次元/下雨.jpg"
     # 侧边抽屉头部图片 多个随机
     drawerHeaderBg:
-      - "/img/drawerCover.jpg"
+      - "./img/drawerCover.jpg"
 
 uiux:
     #标语 多个随机
@@ -42,7 +42,7 @@ Drawer:
       #类型: 站内链接
       type: sitelink
       #链接: 根目录
-      href: /
+      href: /blog
       #图标
       icon: home
     -
@@ -65,7 +65,7 @@ Drawer:
       #类型: 站内链接
       type: sitelink
       #链接: 搜索功能
-      href: /search/
+      href: /blog/search/
       #图标
       icon: search
     -
@@ -118,7 +118,7 @@ Drawer:
             viewBox: '0 0 1024 1024'
 
 #取色器(在侧边抽屉)
-colorPicker: true
+colorPicker: false
 
 #首页工具栏移动端不显示（在首页第2张卡片）
 homeToolBar:
@@ -133,7 +133,7 @@ homeToolBar:
         #类型: 站外链接
         type: link
         #链接
-        href: /atom.xml
+        href: /blog/atom.xml
         #图标
         icon: rss_feed
 
