@@ -9,10 +9,6 @@ script:
   - hexo clean
   - hexo generate
 
-branches:
-  only:
-    - master
-
 deploy:
   local-dir: public
   provider: pages
@@ -27,6 +23,7 @@ after_deploy:
   - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
   - ./send.sh success $WEBHOOK_URL
+  
 after_failure:
   - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
