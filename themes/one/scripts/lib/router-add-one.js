@@ -15,7 +15,7 @@ module.exports = function (site) {
 
   postNameList.forEach((value)=>{
     res.push({
-      path: '/post/' + value + '/index.html',
+      path: '/blog/post/' + value + '/index.html',
       layout:'index',
       data: {}
     });
@@ -23,14 +23,14 @@ module.exports = function (site) {
 
   pageNameList.forEach((value)=>{
     res.push({
-      path: '/page/' + value + '/index.html',
+      path: '/blog/page/' + value + '/index.html',
       layout:'index',
       data: {}
     });
   })
 
   res.push({
-      path: '/search/index.html',
+      path: '/blog/search/index.html',
       layout:'index',
       data: {}
     });
