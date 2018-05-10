@@ -18,9 +18,9 @@ page_404:
   tencent_404: false
 
 menu:
-  Resume: 
+  'null': 
     link: #
-  "Menu item":
+  'null':
     link: #
 
 post:
@@ -34,7 +34,87 @@ post:
 
 livere:
   id: 'city'
-  uid:
+  uid: #
 
 social:
   github: https://github.com/leewp14  
+
+
+
+## CRITICAL LINES - DO NOT TOUCH
+libs:
+  noty:
+    name: noty.js notification library
+    url: https://ned.im/noty/
+    css: {{config.root}}libs/noty/lib/noty.css
+    js_min: {{config.root}}libs/noty/lib/noty.min.js
+    js: {{config.root}}libs/noty/lib/noty.js
+  tippy:
+    name: tippy.js tooltip library
+    url: https://atomiks.github.io/tippyjs/
+    js: {{config.root}}libs/tippy.js/dist/tippy.all.js
+    js_min: {{config.root}}libs/tippy.js/dist/tippy.all.min.js
+  headroom:
+    name: headroom.js
+    url: http://wicky.nillia.ms/headroom.js/
+    js: {{config.root}}libs/headroom.js/dist/headroom.js
+    js_min: {{config.root}}libs/headroom.js/dist/headroom.min.js
+  lightgallery:
+    name: lightgallery.js
+    url: https://sachinchoolur.github.io/lightgallery.js/
+    js: {{config.root}}libs/lightgallery.js/dist/js/lightgallery.js
+    js_min: {{config.root}}libs/lightgallery.js/dist/js/lightgallery.min.js
+    css: {{config.root}}libs/lightgallery.js/dist/css/lightgallery.css
+    css_min: {{config.root}}libs/lightgallery.js/dist/css/lightgallery.min.css
+  lgzoom:
+    name: lightgallery.js zoom plugin
+    url: https://sachinchoolur.github.io/lightgallery.js/
+    js: {{config.root}}libs/lg-zoom/dist/lg-zoom.js
+    js_min: {{config.root}}libs/lg-zoom/dist/lg-zoom.min.js
+  jquery:
+    name: jQuery library
+    url: https://jquery.com/
+    js: {{config.root}}libs/jquery/dist/jquery.js
+    js_min: {{config.root}}libs/jquery/dist/jquery.min.js
+  gitment:
+    name: gitment comment system
+    url: https://github.com/imsun/gitment
+    js: {{config.root}}libs/gitment/dist/gitment.browser.js
+    js_min: {{config.root}}libs/gitment/dist/gitment.browser.js
+    css: {{config.root}}libs/gitment/style/default.css
+  valine:
+    name: valine comment system
+    url: https://valine.js.org/
+    js_cdn: //unpkg.com/valine/dist/Valine.min.js
+  leancloud:
+    name: leancloud BAAS
+    url: https://leancloud.cn/
+    js_cdn: //cdn1.lncld.net/static/js/3.6.4/av-min.js
+  mathjax:
+    name: mathjax library
+    url: https://www.mathjax.org/
+    js_cdn: https://cdnjs.cloudflare.com/ajax//libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
+  jscookie:
+    name: "js-cookie.js: A javascript cookie manipulation library"
+    url: https://github.com/js-cookie/js-cookie
+    js_cdn: https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js
+    js: {{config.root}}libs/js-cookie/src/js.cookie.js
+  fontawesome:
+    name: fontawesome
+    url: https://fontawesome.com/
+    js_cdn: https://use.fontawesome.com/releases/v5.0.6/js/all.js
+  fuse:
+    name: "fuse.js: A javascript fuzzy search library"
+    url: http://fusejs.io/
+    js_min: {{config.root}}libs/fuse.js/dist/fuse.min.js
+    js: {{config.root}}libs/fuse.js/dist/fuse.js
+  jshashes:
+    name: "hashes.js: A javascript hashing library"
+    url: https://github.com/h2non/jshashes
+    js_min: {{config.root}}libs/jshashes/hashes.min.js
+    js: {{config.root}}libs/jshashes/hashes.js
+  loadjs:
+    name: "loadjs.js: A javascript dependency management library"
+    url: https://github.com/muicss/loadjs
+    js_min: {{config.root}}libs/loadjs/dist/loadjs.min.js
+    js: {{config.root}}libs/loadjs/dist/loadjs.js
