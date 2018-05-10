@@ -23,11 +23,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- load loadjs.js -->
-  <script src="/blog/libs/loadjs/dist/loadjs.min.js"></script>
+  <script src="/blog/.js"></script>
 
   <!-- load lightgallery -->
 <link rel="stylesheet" href="/blog/css/lightgallery.css">
-<link rel="stylesheet" href="/blog/libs/noty/lib/noty.css">
+<link rel="stylesheet" href="/blog/.css">
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -48,7 +48,7 @@ crossorigin="anonymous"></script>
  
 
   <!-- load font awesome 5 -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script defer src=""></script>
 
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -56,10 +56,10 @@ crossorigin="anonymous"></script>
   });
   </script>
   <!-- load mathjax -->
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax//libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript" async src=""></script>
 
   <!-- load js-cookie -->
-  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src=""></script>
     <script src="/blog/js/social-share.min.js"></script>
     <script src="/blog/js/theme.js"></script>
 
@@ -68,9 +68,6 @@ crossorigin="anonymous"></script>
   
 
   <!-- include comment system code -->
-  
-    <script src="//cdn1.lncld.net/static/js/3.6.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -83,18 +80,11 @@ crossorigin="anonymous"></script>
 <header id="header" class='header'>
 	<div class="header-title">
 		
-		<div class='header-logo'>
-			<a href='/'>
-				<img src='/images/theme-icon.svg' />
-			</a>
-		</div>
-		<div class='header-text'>
+		<div class='header-text-no-image'>
 			<h1>
 				<a href="/">Hexo</a>
 			</h1>
-			<subtitle>
-				
-			</subtitle>
+			<subtitle></subtitle>
 		</div>
 		
 	</div>
@@ -105,6 +95,36 @@ crossorigin="anonymous"></script>
 
 <nav id="nav">
 	
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name active_page">
+				
+					<a class='nav-link' href="">
+						<span>Resume </span>
+					</a>
+				</div>
+			</div>
+		
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name active_page">
+				
+					<a class='nav-link' href="">
+						<span>Menu item </span>
+					</a>
+				</div>
+			</div>
+		
 	
 	
 	<div class='nav-item' id='nav-item-archive'>
@@ -132,6 +152,30 @@ crossorigin="anonymous"></script>
 				</a>
 		</div>
 		<div class="nav-more-menu">
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="">
+							<span>Resume</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="">
+							<span>Menu item</span>
+						</a>
+					</div>
+			</div>
+		
 		
 		
 	</div>
@@ -181,7 +225,7 @@ crossorigin="anonymous"></script>
 		<div class="Card-meta">
 			<div class='Card-tags'></div>
 			<ul>
-					<li><i class='fa fa-calendar'></i> 2018-05-10</li>
+					<li><i class='fa fa-calendar'></i> May 10, 2018</li>
 					
 					
 					
@@ -213,6 +257,12 @@ crossorigin="anonymous"></script>
     
     <div class='footer-social'>
         
+            
+                
+                    <div class='footer-social-item'><a href='https://github.com/leewp14' target='_blank' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+        
     </div>
 </footer>
 
@@ -225,6 +275,18 @@ crossorigin="anonymous"></script>
 
 <nav id="nav">
 	
+	
+		
+			
+				
+			
+		
+		
+	
+		
+			
+		
+		
 	
 	
 	<div class='nav-item' id='nav-item-archive'>
@@ -253,6 +315,30 @@ crossorigin="anonymous"></script>
 		</div>
 		<div class="nav-more-menu">
 		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="">
+							<span>Resume</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="">
+							<span>Menu item</span>
+						</a>
+					</div>
+			</div>
+		
+		
 		
 	</div>
 	</div>
@@ -264,9 +350,24 @@ crossorigin="anonymous"></script>
 
 
 
-    
+    <!-- 来必力City版安装代码 -->
 
+<script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
 
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+</script>
+<noscript> Activate Javascript to use livere comment system. (为正常使用来必力评论功能请激活JavaScript)</noscript>
+</div>
+<!-- City版安装代码已完成 -->
 
 
 
@@ -323,7 +424,7 @@ changeLayoutOnTouchScreen();
 <script type='text/javascript'>
 
   
-    loadjs(['/libs/jshashes/hashes.min.js', '/libs/js-cookie/src/js.cookie.js', '/js/post.v2.js'], 'post-version');
+    loadjs(['', '', '/js/post.v2.js'], 'post-version');
     loadjs.ready('post-version', {
       success: function(){
         
