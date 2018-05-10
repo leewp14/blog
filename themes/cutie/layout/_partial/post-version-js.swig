@@ -4,7 +4,7 @@
 <script type='text/javascript'>
 {% set enable_unread_badge = parse_config([post.enable_unread_badge, site.data.cutie.post.enable_unread_badge, theme.post.enable_unread_badge]) %}
   {% if is_home() || is_archive() || is_tag() || is_category() %}
-    loadjs(['{{ theme.libs.jshashes.js_min }}', '{{ theme.libs.jscookie.js }}', '{{site_root + "js/post.v2.js"}}'], 'post-version');
+    loadjs(['{{ site_root + theme.libs.jshashes.js_min }}', '{{ site_root + theme.libs.jscookie.js }}', '{{site_root + "js/post.v2.js"}}'], 'post-version');
     loadjs.ready('post-version', {
       success: function(){
         {% for post in page.posts %}
