@@ -27,7 +27,7 @@
 		</div>
 </div>
 
-{{ js( site_root + theme.libs.fuse.js_min) }}
+{{ js(theme.libs.fuse.js_min) }}
 <script>
 	var options = {
 		shouldSort: true,
