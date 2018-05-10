@@ -25,11 +25,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- load loadjs.js -->
-  <script src="/blog/blog/libs/loadjs/dist/loadjs.min.js"></script>
+  <script src="/blog/libs/loadjs/dist/loadjs.min.js"></script>
 
   <!-- load lightgallery -->
 <link rel="stylesheet" href="/blog/css/lightgallery.css">
-<link rel="stylesheet" href="/blog/blog/libs/noty/lib/noty.css">
+<link rel="stylesheet" href="/blog/libs/noty/lib/noty.css">
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -588,7 +588,7 @@ changeLayoutOnTouchScreen();
 
   
   // update cookie if this page is opened (directly)
-  loadjs(['/blog/libs/jshashes/hashes.min.js', '/blog/libs/js-cookie/src/js.cookie.js', '/blog/js/post.v2.js'], 'post-version');
+  loadjs(['/blog//libs/jshashes/hashes.min.js', '/blog//libs/js-cookie/src/js.cookie.js', '/blog/js/post.v2.js'], 'post-version');
   loadjs.ready('post-version', function(){
     
     new Postv2('hashit_9b5d652aac200ff41e4bb367003eeb1b1a0b88edb532f43932130b0efeee85f0').update('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){});
