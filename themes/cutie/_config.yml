@@ -1,10 +1,10 @@
 version: 2.0.11
 url: https://qutang.github.io/cutie/
 logo: #
-slogan: Bazinga, theme cutie!
+slogan: Infinite possibilities-
 
 announcement:
-  text: This is a sample site announcement.
+  text: 'New theme initialized : hexo-theme-cutie :3'
 
 global:
   comment_system: livere
@@ -28,7 +28,7 @@ post:
   allow_modification: false
   allow_commercial: false
   use_lightgallery: true
-  allow_comment: true
+  allow_comment: false
   toc_level: 2
   enable_unread_badge: false
 

@@ -70,7 +70,7 @@
 			if(result[i].external_link !== ""){
 				url = result[i].external_link;
 			}else{
-				url = '/' + result[i].path;
+				url = {{site_root}} + result[i].path;
 			}
 
 			anotherBox.find('.Card-title a').text(result[i].title).attr('href', url);
