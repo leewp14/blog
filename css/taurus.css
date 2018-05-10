@@ -2060,7 +2060,7 @@ html {
   }
 }
 body {
-  background: url("https://raw.githubusercontent.com/leewp14/temp/master/background.webp");
+  background-color: #f5f5f5;
 }
 .Card {
   font-size: 14px;
