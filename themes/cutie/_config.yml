@@ -3,9 +3,6 @@ url: https://qutang.github.io/cutie/
 logo: #
 slogan: Infinite possibilities-
 
-announcement:
-  text: New user interface, cheers! 
-
 global:
   comment_system: livere
   scheme: 
@@ -13,6 +10,8 @@ global:
     color: flower
   icon_set: blue-shadow
   use_animation: true
+  announcement:
+    text: New user interface, cheers! 
 
 page_404:
   tencent_404: false
