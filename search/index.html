@@ -12,12 +12,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   
-      <title>Search - Hexo</title>
+      <title>Search - 標哥</title>
   
 
   
   
-  <meta name="description" content="">
+  <meta name="description" content="Personal blog of he :3">
   <meta name="author" content="lee.wp14">
 
   <!-- Mobile Specific Metas
@@ -77,119 +77,10 @@ crossorigin="anonymous"></script>
 </head>
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
 
- 
-
-<header id="header" class='header'>
-	<div class="header-title">
-		
-		<div class='header-text-no-image'>
-			<h1>
-				<a href="/">Hexo</a>
-			</h1>
-			<subtitle></subtitle>
-		</div>
-		
-	</div>
-	<div id='header-nav'>
-		
-
-
-
-
-
-<nav id="nav">
-	
-	
-		
-			
-		
-		
-			<div class='nav-item'>
-				
-					<div class="nav-name active_page">
-				
-					<a class='nav-link' href="">
-						<span>Resume </span>
-					</a>
-				</div>
-			</div>
-		
-	
-		
-			
-		
-		
-			<div class='nav-item'>
-				
-					<div class="nav-name active_page">
-				
-					<a class='nav-link' href="">
-						<span>Menu item </span>
-					</a>
-				</div>
-			</div>
-		
-	
-	
-	<div class='nav-item' id='nav-item-archive'>
-		
-				<div class='nav-icon'>
-				
-			<a href="/blog/archives/" title='Archives'>
-			<img src="/blog/images/icons/blue-shadow/archive.svg" alt="">
-			</a>
-		</div>
-	</div>
-	<div class='nav-item' id='nav-item-search'>
-		
-		<div class='nav-icon'>
-		
-			<a href="/blog/search/" title='Search'>
-			<img src="/blog/images/icons/blue-shadow/search.svg" alt="">
-			</a>
-		</div>
-	</div>
-	<div class="nav-item" id='nav-item-more'>
-		<div class="nav-icon">
-				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
-				<img src="/blog/images/icons/blue-shadow/menu.svg" alt="">
-				</a>
-		</div>
-		<div class="nav-more-menu">
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="">
-							<span>Resume</span>
-						</a>
-					</div>
-			</div>
-		
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="">
-							<span>Menu item</span>
-						</a>
-					</div>
-			</div>
-		
-		
-		
-	</div>
-	</div>
-</nav>
-
-	</div>
-</header>
 
  
+
+
 
 
 
@@ -240,7 +131,7 @@ crossorigin="anonymous"></script>
 			"tags"
 		]
 	};
-	var s = '[{"title":"Hello World","date":"2018-05-10T11:23:35.308Z","content":"Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.\nQuick Start\nCreate a new post\n1$ hexo new My New Post\nMore info: Writing\nRun server\n1$ hexo server\nMore info: Server\nGenerate static files\n1$ hexo generate\nMore info: Generating\nDeploy to remote sites\n1$ hexo deploy\nMore info: Deployment\n","tags":[],"path":"2018/05/10/hello-world/","external_link":""}]';
+	var s = '[{"title":"Hello World","date":"2018-05-10T12:37:58.425Z","content":"Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.\nQuick Start\nCreate a new post\n1$ hexo new My New Post\nMore info: Writing\nRun server\n1$ hexo server\nMore info: Server\nGenerate static files\n1$ hexo generate\nMore info: Generating\nDeploy to remote sites\n1$ hexo deploy\nMore info: Deployment\n","tags":[],"path":"2018/05/10/hello-world/","external_link":""}]';
 	s = s.replace(/\\n/g, "\\n")
                .replace(/\\'/g, "\\'")
                .replace(/\\"/g, '\\"')
@@ -267,7 +158,7 @@ crossorigin="anonymous"></script>
 			if(result[i].external_link !== ""){
 				url = result[i].external_link;
 			}else{
-				url = '/' + result[i].path;
+				url = /blog/ + result[i].path;
 			}
 
 			anotherBox.find('.Card-title a').text(result[i].title).attr('href', url);
@@ -448,6 +339,9 @@ changeLayoutOnTouchScreen();
 
 // 
 </script>
+
+
+
 
 <script type='text/javascript'>
 
