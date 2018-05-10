@@ -25,11 +25,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- load loadjs.js -->
-  <script src="/blog/.js"></script>
+  <script src="/blog/blog/libs/loadjs/dist/loadjs.min.js"></script>
 
   <!-- load lightgallery -->
 <link rel="stylesheet" href="/blog/css/lightgallery.css">
-<link rel="stylesheet" href="/blog/.css">
+<link rel="stylesheet" href="/blog/blog/libs/noty/lib/noty.css">
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -43,12 +43,14 @@ crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/blog/css/taurus.css">
     
+        <link rel="stylesheet" href="/blog/css/scheme-taurus/animations.css">
+    
 
 
  
 
   <!-- load font awesome 5 -->
-  <script defer src=""></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -56,10 +58,10 @@ crossorigin="anonymous"></script>
   });
   </script>
   <!-- load mathjax -->
-  <script type="text/javascript" async src=""></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax//libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
   <!-- load js-cookie -->
-  <script src=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="/blog/js/social-share.min.js"></script>
     <script src="/blog/js/theme.js"></script>
 
@@ -100,6 +102,36 @@ crossorigin="anonymous"></script>
 <nav id="nav">
 	
 	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name active_page">
+				
+					<a class='nav-link' href="">
+						<span>null </span>
+					</a>
+				</div>
+			</div>
+		
+	
+		
+			
+		
+		
+			<div class='nav-item'>
+				
+					<div class="nav-name active_page">
+				
+					<a class='nav-link' href="">
+						<span>null2 </span>
+					</a>
+				</div>
+			</div>
+		
+	
 	
 	<div class='nav-item' id='nav-item-toc'>
 		
@@ -107,9 +139,9 @@ crossorigin="anonymous"></script>
 
 
 
-
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#quick-start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a></li></ol>
 <div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
-    <img src="/blog/images/icons//toc.svg" alt="">
+    <img src="/blog/images/icons/blue-shadow/toc.svg" alt="">
 </div>
 
 	</div>
@@ -119,7 +151,7 @@ crossorigin="anonymous"></script>
 				<div class='nav-icon'>
 				
 			<a href="/blog/archives/" title='Archives'>
-			<img src="/blog/images/icons//archive.svg" alt="">
+			<img src="/blog/images/icons/blue-shadow/archive.svg" alt="">
 			</a>
 		</div>
 	</div>
@@ -128,17 +160,41 @@ crossorigin="anonymous"></script>
 		<div class='nav-icon'>
 		
 			<a href="/blog/search/" title='Search'>
-			<img src="/blog/images/icons//search.svg" alt="">
+			<img src="/blog/images/icons/blue-shadow/search.svg" alt="">
 			</a>
 		</div>
 	</div>
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
-				<img src="/blog/images/icons//menu.svg" alt="">
+				<img src="/blog/images/icons/blue-shadow/menu.svg" alt="">
 				</a>
 		</div>
 		<div class="nav-more-menu">
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="">
+							<span>Null</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="">
+							<span>Null2</span>
+						</a>
+					</div>
+			</div>
+		
 		
 		
 	</div>
@@ -184,6 +240,13 @@ crossorigin="anonymous"></script>
 
 
     
+    
+        
+    
+
+    
+        
+    
 
 
 
@@ -220,7 +283,7 @@ crossorigin="anonymous"></script>
                 
             
             
-                <a href=mailto:>Reproduction prohibited</a>
+                <a href=https://creativecommons.org/licenses/by-nc-nd/4.0/>CC BY-NC-ND 4.0</a>
             
             </li>
     </ul>
@@ -302,9 +365,9 @@ Run server
 
 
 
-
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#quick-start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a></li></ol>
 <div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
-    <img src="/blog/images/icons//toc.svg" alt="">
+    <img src="/blog/images/icons/blue-shadow/toc.svg" alt="">
 </div>
 
     </div>
@@ -337,11 +400,17 @@ Run server
     <div class='footer-copyright'>
         <div>
             <p> Copyright by <a href="">lee.wp14 </a> @ 2018</p>
-            <p>Designed by: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> and <i class="fas fa-graduation-cap"></i> <a href="https://qutang.github.io">Qu Tang</a> &bull; Theme: <a href="https://leewp14.github.io/blog">Cutie -undefined</a> &bull; Powered by <a href="http://hexo.io">Hexo.</a></p>
+            <p>Designed by: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> and <i class="fas fa-graduation-cap"></i> <a href="https://qutang.github.io">Qu Tang</a> &bull; Theme: <a href="https://qutang.github.io/cutie/">Cutie 2.0.11-Taurus</a> &bull; Powered by <a href="http://hexo.io">Hexo.</a></p>
         </div>
     </div>
     
     <div class='footer-social'>
+        
+            
+                
+                    <div class='footer-social-item'><a href='https://github.com/leewp14' target='_blank' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></div>
+                
+            
         
     </div>
 </footer>
@@ -358,6 +427,18 @@ Run server
 <nav id="nav">
 	
 	
+		
+			
+				
+			
+		
+		
+	
+		
+			
+		
+		
+	
 	
 	<div class='nav-item' id='nav-item-toc'>
 		
@@ -365,9 +446,9 @@ Run server
 
 
 
-
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#quick-start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a></li></ol>
 <div class="toc-button" onclick='toggleTOC(event);' ontouchstart='toggleTOC(event);'>
-    <img src="/blog/images/icons//toc.svg" alt="">
+    <img src="/blog/images/icons/blue-shadow/toc.svg" alt="">
 </div>
 
 	</div>
@@ -377,7 +458,7 @@ Run server
 				<div class='nav-icon'>
 				
 			<a href="/blog/archives/" title='Archives'>
-			<img src="/blog/images/icons//archive.svg" alt="">
+			<img src="/blog/images/icons/blue-shadow/archive.svg" alt="">
 			</a>
 		</div>
 	</div>
@@ -386,17 +467,41 @@ Run server
 		<div class='nav-icon'>
 		
 			<a href="/blog/search/" title='Search'>
-			<img src="/blog/images/icons//search.svg" alt="">
+			<img src="/blog/images/icons/blue-shadow/search.svg" alt="">
 			</a>
 		</div>
 	</div>
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
-				<img src="/blog/images/icons//menu.svg" alt="">
+				<img src="/blog/images/icons/blue-shadow/menu.svg" alt="">
 				</a>
 		</div>
 		<div class="nav-more-menu">
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="">
+							<span>Null</span>
+						</a>
+					</div>
+			</div>
+		
+		
+			
+			
+		
+			<div class='nav-more-item'>
+					<div class="nav-name">
+						<a class='nav-link' href="">
+							<span>Null2</span>
+						</a>
+					</div>
+			</div>
+		
 		
 		
 	</div>
@@ -409,9 +514,42 @@ Run server
 
 
 
+    <!-- 来必力City版安装代码 -->
+
+<script type="text/javascript">
+(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');
+</script>
+<noscript> Activate Javascript to use livere comment system. (为正常使用来必力评论功能请激活JavaScript)</noscript>
+</div>
+<!-- City版安装代码已完成 -->
 
 
 
+
+
+    <script src="/blog/js/lightgallery.min.js"></script>
+<script src="/blog/js/lg-zoom.min.js"></script>
+<script type='text/javascript'>
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
+        $(".article-content img").each(function(){
+            console.log($(this).attr('src'))
+            $(this).attr('data-src', $(this).attr('src')).lightGallery({
+                selector: 'this'
+            })
+        });
+    });
+</script>
 
 
 
@@ -450,7 +588,7 @@ changeLayoutOnTouchScreen();
 
   
   // update cookie if this page is opened (directly)
-  loadjs(['', '', '/blog/js/post.v2.js'], 'post-version');
+  loadjs(['/blog/libs/jshashes/hashes.min.js', '/blog/libs/js-cookie/src/js.cookie.js', '/blog/js/post.v2.js'], 'post-version');
   loadjs.ready('post-version', function(){
     
     new Postv2('hashit_9b5d652aac200ff41e4bb367003eeb1b1a0b88edb532f43932130b0efeee85f0').update('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){});
