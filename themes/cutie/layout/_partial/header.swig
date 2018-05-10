@@ -13,7 +13,7 @@
 		</div>
 		<div class='header-text'>
 			<h1>
-				<a href="{{site_root}">{{ config.title }}</a>
+				<a href="{{site_root}}">{{ config.title }}</a>
 			</h1>
 			<subtitle>
 				{{ truncate(config.subtitle, {length: 40, separator: ' ', omission: '...'}) }}
