@@ -1,9 +1,11 @@
 
+{% set site_root = config.root %}
+
 {% block primary %}
 	{% if type == 'category' %}
 		<div class='archive-header'>
 		<div class='archive-logo'>
-							<img src="{{ '/images/' + title + '.svg' }}" alt="">
+							<img src="{{ site_root + 'images/' + title + '.svg' }}" alt="">
 				</div><h2 class='archive-title'>{{ title | capitalize }}</h2>
 	</div>
 	{% else %}

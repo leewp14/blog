@@ -1,4 +1,6 @@
 
+{% set site_root = config.root %}
+
 {% set comment_system = parse_config([site.data.cutie.global.comment_system, theme.global.comment_system]) %}
 
 
@@ -79,5 +81,5 @@ crossorigin="anonymous"></script>
   {% endif %}
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="icon" type="image/png" href="{{site_root + 'images/favicon.png'}}">
 </head>

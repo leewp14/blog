@@ -14,6 +14,8 @@
 {% set use_post_stats = false %}
 {% endif %}
 
+{% set site_root = config.root %}
+
 
 {% set scheme = parse_config([site.data.cutie.global.scheme, theme.global.scheme]) %}
 
@@ -38,9 +40,9 @@
 			<a href="{{ url_for(item.path) }}">
 		{% endif %}
 		{% if item.icon %}
-			<img class='grow' src="{{ item.icon }}" alt="" onerror='if(this.src != "/images/uncategorized.svg") this.src = "/images/uncategorized.svg"'>
+			<img class='grow' src="{{ item.icon }}" alt="" onerror='if(this.src != "{{site_root + 'images/uncategorized.svg'}}") this.src = "{{site_root + 'images/uncategorized.svg'}}"'>
 		{% else %}
-			<img class='grow' src="{{ '/images/' + category_name + '.svg' }}" alt="" onerror='if (this.src != "/images/uncategorized.svg") this.src = "/images/uncategorized.svg"'>
+			<img class='grow' src="{{ site_root + 'images/' + category_name + '.svg' }}" alt="" onerror='if (this.src != "{{site_root + 'images/uncategorized.svg'}}") this.src = "{{site_root + 'images/uncategorized.svg'}}"'>
 		{% endif %}
 		</a>
 	</div>

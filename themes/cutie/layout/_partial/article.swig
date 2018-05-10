@@ -4,6 +4,8 @@
     }
 </style>
 
+{% set site_root = config.root %}
+
 {% set icon_set = parse_config([site.data.cutie.global.icon_set, theme.global.icon_set]) %}
 
 {% if config.language[0] === 'zh-cn' || config.language[0] === 'zh-tw' %}
@@ -62,7 +64,7 @@
          {% if item.icon %}
          <div class='article-logo'>
             <a href="#" data-no-instant>
-                <img src="{{ item.icon }}" alt="" onerror='if(this.src != "/images/uncategorized.svg") this.src="/images/uncategorized.svg"'>
+                <img src="{{ item.icon }}" alt="" onerror='if(this.src != "{{site_root + 'images/uncategorized.svg'}}") this.src="{{site_root + 'images/uncategorized.svg'}}"'>
             </a>
          </div>
          {% endif %}
@@ -77,7 +79,7 @@
             {% for cat in item.categories %}
             {% set category_link = url_for(cat.path) %}
                 <li><a href="{{ category_link }}" data-no-instant>
-                    <img src="{{ '/images/' + cat.name + '.svg' }}" alt="{{ cat.name }}" onerror='if(this.src != "/images/uncategorized.svg") this.src="/images/uncategorized.svg"' title='{{ cat.name }}'/>
+                    <img src="{{ site_root + 'images/' + cat.name + '.svg' }}" alt="{{ cat.name }}" onerror='if(this.src != "{{site_root + 'images/uncategorized.svg'}}") this.src="{{site_root + 'images/uncategorized.svg'}}"' title='{{ cat.name }}'/>
                 </a></li>
             {% endfor %}
         </ul>

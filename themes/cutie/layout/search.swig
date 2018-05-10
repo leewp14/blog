@@ -1,9 +1,12 @@
+
+{% set site_root = config.root %}
+
 <div class='search-container'>
 	<input type="text" id='search-form'>
 
 	<ul class="cat-list">
 		{% for cat in site.categories %}
-			<li><a href="{{'/categories/' + cat.name + '/'}}"><img src="{{ '/images/' + cat.name + '.svg' }}" alt="{{ cat.name }}" onerror='if(this.src != "/images/uncategorized.svg") this.src="/images/uncategorized.svg"' title='{{ cat.name }}'></a></li>
+			<li><a href="{{site_root + 'categories/' + cat.name + '/'}}"><img src="{{ site_root + 'images/' + cat.name + '.svg' }}" alt="{{ cat.name }}" onerror='if(this.src != "{{site_root + 'images/uncategorized.svg'}}") this.src="{{site_root + 'images/uncategorized.svg'}}"' title='{{ cat.name }}'></a></li>
 		{% endfor %}
 	</ul>
 

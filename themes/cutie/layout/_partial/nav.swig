@@ -1,4 +1,6 @@
 
+{% set site_root = config.root %}
+
 {% set menu = parse_config([site.data.cutie.menu, theme.menu]) %}
 
 {% set icon_set = parse_config([site.data.cutie.global.icon_set, theme.global.icon_set]) %}
@@ -34,38 +36,38 @@
 	</div>
 	{% endif %}
 	<div class='nav-item' id='nav-item-archive'>
-		{% if url.indexOf('/archives/') !== -1 %}
+		{% if url.indexOf(site_root + 'archives/') !== -1 %}
 				<div class='nav-icon active_dot'>
 				{% else %}
 				<div class='nav-icon'>
 				{% endif %}
-			<a href="/archives/" title='{{ __("menu.archives") }}'>
-			<img src="{{ '/images/icons/' + icon_set + '/archive.svg' }}" alt="">
+			<a href="{{site_root + 'archives/'}}" title='{{ __("menu.archives") }}'>
+			<img src="{{ site_root + 'images/icons/' + icon_set + '/archive.svg' }}" alt="">
 			</a>
 		</div>
 	</div>
 	<div class='nav-item' id='nav-item-search'>
-		{% if url.indexOf('/search/') !== -1 %}
+		{% if url.indexOf(site_root + '/search/') !== -1 %}
 		<div class='nav-icon active_dot'>
 		{% else %}
 		<div class='nav-icon'>
 		{% endif %}
-			<a href="/search/" title='{{ __("menu.search") }}'>
-			<img src="{{ '/images/icons/' + icon_set + '/search.svg' }}" alt="">
+			<a href="{{ site_root + 'search/' }}" title='{{ __("menu.search") }}'>
+			<img src="{{ site_root + 'images/icons/' + icon_set + '/search.svg' }}" alt="">
 			</a>
 		</div>
 	</div>
 	<div class="nav-item" id='nav-item-more'>
 		<div class="nav-icon">
 				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
-				<img src="{{ '/images/icons/' + icon_set + '/menu.svg' }}" alt="">
+				<img src="{{ site_root + 'images/icons/' + icon_set + '/menu.svg' }}" alt="">
 				</a>
 		</div>
 		<div class="nav-more-menu">
 		{% for menu_name, menu_content in menu %}
 			{% set use_item = true %}
 			{% for cat in site.categories %}
-				{% if url_for(menu_content.link) == url_for('/categories/' + cat.name + '/') %}
+				{% if url_for(menu_content.link) == url_for(site_root + 'categories/' + cat.name + '/') %}
 					{% set use_item = false %}
 				{% endif %}
 			{% endfor %}
@@ -82,7 +84,7 @@
 		{% for cat in site.categories %}
 		<div class='nav-more-item'>
 				<div class="nav-name">
-					<a class='nav-link' href="{{'/categories/' + cat.name + '/'}}">
+					<a class='nav-link' href="{{site_root + 'categories/' + cat.name + '/'}}">
 						<span>{{ cat.name | capitalize }}</span>
 					</a>
 				</div>
