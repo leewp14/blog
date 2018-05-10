@@ -45,42 +45,42 @@ libs:
   noty:
     name: noty.js notification library
     url: https://ned.im/noty/
-    css: libs/noty/lib/noty.css
-    js_min: libs/noty/lib/noty.min.js
-    js: libs/noty/lib/noty.js
+    css: /libs/noty/lib/noty.css
+    js_min: /libs/noty/lib/noty.min.js
+    js: /libs/noty/lib/noty.js
   tippy:
     name: tippy.js tooltip library
     url: https://atomiks.github.io/tippyjs/
-    js: libs/tippy.js/dist/tippy.all.js
-    js_min: libs/tippy.js/dist/tippy.all.min.js
+    js: /libs/tippy.js/dist/tippy.all.js
+    js_min: /libs/tippy.js/dist/tippy.all.min.js
   headroom:
     name: headroom.js
     url: http://wicky.nillia.ms/headroom.js/
-    js: libs/headroom.js/dist/headroom.js
-    js_min: libs/headroom.js/dist/headroom.min.js
+    js: /libs/headroom.js/dist/headroom.js
+    js_min: /libs/headroom.js/dist/headroom.min.js
   lightgallery:
     name: lightgallery.js
     url: https://sachinchoolur.github.io/lightgallery.js/
-    js: libs/lightgallery.js/dist/js/lightgallery.js
-    js_min: libs/lightgallery.js/dist/js/lightgallery.min.js
-    css: libs/lightgallery.js/dist/css/lightgallery.css
-    css_min: libs/lightgallery.js/dist/css/lightgallery.min.css
+    js: /libs/lightgallery.js/dist/js/lightgallery.js
+    js_min: /libs/lightgallery.js/dist/js/lightgallery.min.js
+    css: /libs/lightgallery.js/dist/css/lightgallery.css
+    css_min: /libs/lightgallery.js/dist/css/lightgallery.min.css
   lgzoom:
     name: lightgallery.js zoom plugin
     url: https://sachinchoolur.github.io/lightgallery.js/
-    js: libs/lg-zoom/dist/lg-zoom.js
-    js_min: libs/lg-zoom/dist/lg-zoom.min.js
+    js: /libs/lg-zoom/dist/lg-zoom.js
+    js_min: /libs/lg-zoom/dist/lg-zoom.min.js
   jquery:
     name: jQuery library
     url: https://jquery.com/
-    js: libs/jquery/dist/jquery.js
-    js_min: libs/jquery/dist/jquery.min.js
+    js: /libs/jquery/dist/jquery.js
+    js_min: /libs/jquery/dist/jquery.min.js
   gitment:
     name: gitment comment system
     url: https://github.com/imsun/gitment
-    js: libs/gitment/dist/gitment.browser.js
-    js_min: libs/gitment/dist/gitment.browser.js
-    css: libs/gitment/style/default.css
+    js: /libs/gitment/dist/gitment.browser.js
+    js_min: /libs/gitment/dist/gitment.browser.js
+    css: /libs/gitment/style/default.css
   valine:
     name: valine comment system
     url: https://valine.js.org/
@@ -97,7 +97,7 @@ libs:
     name: "js-cookie.js: A javascript cookie manipulation library"
     url: https://github.com/js-cookie/js-cookie
     js_cdn: https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js
-    js: libs/js-cookie/src/js.cookie.js
+    js: /libs/js-cookie/src/js.cookie.js
   fontawesome:
     name: fontawesome
     url: https://fontawesome.com/
@@ -105,15 +105,15 @@ libs:
   fuse:
     name: "fuse.js: A javascript fuzzy search library"
     url: http://fusejs.io/
-    js_min: libs/fuse.js/dist/fuse.min.js
-    js: libs/fuse.js/dist/fuse.js
+    js_min: /libs/fuse.js/dist/fuse.min.js
+    js: /libs/fuse.js/dist/fuse.js
   jshashes:
     name: "hashes.js: A javascript hashing library"
     url: https://github.com/h2non/jshashes
-    js_min: libs/jshashes/hashes.min.js
-    js: libs/jshashes/hashes.js
+    js_min: /libs/jshashes/hashes.min.js
+    js: /libs/jshashes/hashes.js
   loadjs:
     name: "loadjs.js: A javascript dependency management library"
     url: https://github.com/muicss/loadjs
-    js_min: libs/loadjs/dist/loadjs.min.js
-    js: libs/loadjs/dist/loadjs.js
+    js_min: /libs/loadjs/dist/loadjs.min.js
+    js: /libs/loadjs/dist/loadjs.js
