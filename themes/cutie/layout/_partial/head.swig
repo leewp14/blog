@@ -39,11 +39,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- load loadjs.js -->
-  {{ js(theme.libs.loadjs.js_min) }}
+  {{ js( site_root + theme.libs.loadjs.js_min) }}
 
   <!-- load lightgallery -->
 {{ css('css/lightgallery.css') }}
-{{ css(theme.libs.noty.css) }}
+{{ css( site_root + theme.libs.noty.css) }}
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

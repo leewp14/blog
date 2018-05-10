@@ -8,7 +8,7 @@
 {% endif %}
 
 {% if announcement %}
-<script type='text/javascript' src='{{ theme.libs.noty.js_min }}'></script>
+<script type='text/javascript' src='{{ site_root + theme.libs.noty.js_min }}'></script>
 <script>
     loadjs(['{{ site_root + theme.libs.noty.js_min }}', '{{ site_root + theme.libs.jshashes.js_min }}', '{{ site_root + theme.libs.jscookie.js }}', '{{ site_root + "js/announcement.js" }}'], 'announcement');
     loadjs.ready('announcement', {
