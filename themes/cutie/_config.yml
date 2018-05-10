@@ -4,7 +4,7 @@ logo: #
 slogan: Infinite possibilities-
 
 global:
-  comment_system: livere
+  comment_system: # livere
   scheme: 
     name: Taurus
     color: flower
@@ -29,7 +29,7 @@ post:
   use_lightgallery: true
   allow_comment: false
   toc_level: 2
-  enable_unread_badge: false
+  enable_unread_badge: true
 
 livere:
   id: 'city'
