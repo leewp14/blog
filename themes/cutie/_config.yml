@@ -17,10 +17,6 @@ page_404:
   tencent_404: false
 
 menu:
-  null: 
-    link: #
-  "null2":
-    link: #
 
 post:
   allow_share: true
