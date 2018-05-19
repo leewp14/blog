@@ -105,6 +105,9 @@ archive_generator:
   yearly: true
   monthly: false
   daily: false
+  
+lazyload:
+  enable: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

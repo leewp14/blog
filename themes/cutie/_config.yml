@@ -18,9 +18,9 @@ page_404:
 
 menu:
   Home: 
-  - /
+    link: /
   Blog: 
-  - /blog
+    link: /blog
 
 post:
   allow_share: true
