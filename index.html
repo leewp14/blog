@@ -278,7 +278,7 @@ crossorigin="anonymous"></script>
 
 
 
-<div class='Card Card-hover Card-index-1' id='hashit_5193c569f55506977a2ec1ea329328f82390c9e351ab3a373dee9d212abd0fb9' data-name='Hello World' data-version=''>
+<div class='Card Card-hover Card-index-1' id='hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2' data-name='Hello World' data-version=''>
 	
 		
 		
@@ -286,7 +286,7 @@ crossorigin="anonymous"></script>
 	<mark class='Card-badge' style='{visibility: "hidden"}'></mark>
 	<div class='Card-figure'>
 		
-			<a href="/blog/2018/05/19/hello-world/">
+			<a href="/blog/2018/05/30/hello-world/">
 		
 		
 			<img class='grow' src="/blog/images/uncategorized.svg" alt="" onerror='if (this.src != "/blog/images/uncategorized.svg") this.src = "/blog/images/uncategorized.svg"'>
@@ -298,14 +298,14 @@ crossorigin="anonymous"></script>
 			<div class='Card-title'>
 				<h2>
 				
-					<a href="/blog/2018/05/19/hello-world/">
+					<a href="/blog/2018/05/30/hello-world/">
 				
 				Hello World</a></h2>
 			</div>
 			<div class='Card-excerpt'>
 				<p>
 				
-					<a href="/blog/2018/05/19/hello-world/">
+					<a href="/blog/2018/05/30/hello-world/">
 				
 				
 				
@@ -321,7 +321,7 @@ crossorigin="anonymous"></script>
 				<div class='Card-tags'></div>
 				
 				<ul>
-						<li><i class='fa fa-calendar'></i> May 19, 2018</li>
+						<li><i class='fa fa-calendar'></i> May 30, 2018</li>
 						
 						
 						
@@ -910,20 +910,20 @@ changeLayoutOnTouchScreen();
           
           
           // show/hide post unread badage
-          var postLinks = document.querySelectorAll('#hashit_5193c569f55506977a2ec1ea329328f82390c9e351ab3a373dee9d212abd0fb9 .Card-title a, #hashit_5193c569f55506977a2ec1ea329328f82390c9e351ab3a373dee9d212abd0fb9 .Card-excerpt a, #hashit_5193c569f55506977a2ec1ea329328f82390c9e351ab3a373dee9d212abd0fb9 .Card-figure a');
-          new Postv2('hashit_5193c569f55506977a2ec1ea329328f82390c9e351ab3a373dee9d212abd0fb9').showUnreadNotification('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){
-            var postBadge = document.querySelector('#hashit_5193c569f55506977a2ec1ea329328f82390c9e351ab3a373dee9d212abd0fb9 mark.Card-badge');
+          var postLinks = document.querySelectorAll('#hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 .Card-title a, #hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 .Card-excerpt a, #hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 .Card-figure a');
+          new Postv2('hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2').showUnreadNotification('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){
+            var postBadge = document.querySelector('#hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 mark.Card-badge');
             $(postBadge).fadeIn();
           }, function(){
-            var postBadge = document.querySelector('#hashit_5193c569f55506977a2ec1ea329328f82390c9e351ab3a373dee9d212abd0fb9 mark.Card-badge');
+            var postBadge = document.querySelector('#hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 mark.Card-badge');
             $(postBadge).fadeOut();
           }); 
           // update cookie upon click the post and hide badge immediately
           for(var i = 0;i < postLinks.length; i++){
             postLinks[i].onclick = function(){
-              new Postv2('hashit_5193c569f55506977a2ec1ea329328f82390c9e351ab3a373dee9d212abd0fb9').update('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){
+              new Postv2('hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2').update('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){
                 console.log('called');
-                var postBadge = document.querySelector('#hashit_5193c569f55506977a2ec1ea329328f82390c9e351ab3a373dee9d212abd0fb9 mark.Card-badge');
+                var postBadge = document.querySelector('#hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 mark.Card-badge');
                 $(postBadge).fadeOut();
               });
             }
