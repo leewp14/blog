@@ -247,19 +247,56 @@ crossorigin="anonymous"></script>
 
 
 
-<div class='Card-archive' id='hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2' data-name='Hello World' data-version=''>
+<div class='Card-archive' id='hashit_9e0536670b7a704316331ef7c5f0b7a20c715ae4d2704c7219182f975b0e6282' data-name='关于標哥 About Me' data-version=''>
 	<mark class='Card-badge'></mark>
 	<div class="Card-body">
 		<h3 class='Card-title'>
 			
-				<a href="/blog/2018/05/30/hello-world/">
+				<a href="/blog/2018/05/31/about-me/">
+			
+			关于標哥 About Me</a>
+		</h3>
+		<div class="Card-meta">
+			<div class='Card-tags'>
+<div class="tags">
+	
+		
+			
+				<label class='tag-1'><a href="/blog/tags/about/">About</a></label>
+			
+		
+	
+	</div>
+</div>
+			<ul>
+					<li><i class='fa fa-calendar'></i> May 31, 2018</li>
+					
+					
+					
+			</ul>
+		</div>
+	</div>
+</div>
+
+	
+		
+
+
+
+
+<div class='Card-archive' id='hashit_7a3dc272441d3604d1786a7239c00cd9839ff8e9006cdcabf3a3db4cfd430b2e' data-name='Hello World' data-version=''>
+	<mark class='Card-badge'></mark>
+	<div class="Card-body">
+		<h3 class='Card-title'>
+			
+				<a href="/blog/2018/05/31/hello-world/">
 			
 			Hello World</a>
 		</h3>
 		<div class="Card-meta">
 			<div class='Card-tags'></div>
 			<ul>
-					<li><i class='fa fa-calendar'></i> May 30, 2018</li>
+					<li><i class='fa fa-calendar'></i> May 31, 2018</li>
 					
 					
 					
@@ -647,20 +684,43 @@ changeLayoutOnTouchScreen();
           
           
           // show/hide post unread badage
-          var postLinks = document.querySelectorAll('#hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 .Card-title a, #hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 .Card-excerpt a, #hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 .Card-figure a');
-          new Postv2('hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2').showUnreadNotification('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){
-            var postBadge = document.querySelector('#hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 mark.Card-badge');
+          var postLinks = document.querySelectorAll('#hashit_9e0536670b7a704316331ef7c5f0b7a20c715ae4d2704c7219182f975b0e6282 .Card-title a, #hashit_9e0536670b7a704316331ef7c5f0b7a20c715ae4d2704c7219182f975b0e6282 .Card-excerpt a, #hashit_9e0536670b7a704316331ef7c5f0b7a20c715ae4d2704c7219182f975b0e6282 .Card-figure a');
+          new Postv2('hashit_9e0536670b7a704316331ef7c5f0b7a20c715ae4d2704c7219182f975b0e6282').showUnreadNotification('hashit_9fe88e3e4e55ba79cfc4d18c37a60e32abf215cae89ce09876cff9377645f74d', function(){
+            var postBadge = document.querySelector('#hashit_9e0536670b7a704316331ef7c5f0b7a20c715ae4d2704c7219182f975b0e6282 mark.Card-badge');
             $(postBadge).fadeIn();
           }, function(){
-            var postBadge = document.querySelector('#hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 mark.Card-badge');
+            var postBadge = document.querySelector('#hashit_9e0536670b7a704316331ef7c5f0b7a20c715ae4d2704c7219182f975b0e6282 mark.Card-badge');
             $(postBadge).fadeOut();
           }); 
           // update cookie upon click the post and hide badge immediately
           for(var i = 0;i < postLinks.length; i++){
             postLinks[i].onclick = function(){
-              new Postv2('hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2').update('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){
+              new Postv2('hashit_9e0536670b7a704316331ef7c5f0b7a20c715ae4d2704c7219182f975b0e6282').update('hashit_9fe88e3e4e55ba79cfc4d18c37a60e32abf215cae89ce09876cff9377645f74d', function(){
                 console.log('called');
-                var postBadge = document.querySelector('#hashit_c2b11f05fb3e1b1a2837043012a40961500b60633f00a6a27554c2765af662b2 mark.Card-badge');
+                var postBadge = document.querySelector('#hashit_9e0536670b7a704316331ef7c5f0b7a20c715ae4d2704c7219182f975b0e6282 mark.Card-badge');
+                $(postBadge).fadeOut();
+              });
+            }
+          }
+          
+        
+          
+          
+          // show/hide post unread badage
+          var postLinks = document.querySelectorAll('#hashit_7a3dc272441d3604d1786a7239c00cd9839ff8e9006cdcabf3a3db4cfd430b2e .Card-title a, #hashit_7a3dc272441d3604d1786a7239c00cd9839ff8e9006cdcabf3a3db4cfd430b2e .Card-excerpt a, #hashit_7a3dc272441d3604d1786a7239c00cd9839ff8e9006cdcabf3a3db4cfd430b2e .Card-figure a');
+          new Postv2('hashit_7a3dc272441d3604d1786a7239c00cd9839ff8e9006cdcabf3a3db4cfd430b2e').showUnreadNotification('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){
+            var postBadge = document.querySelector('#hashit_7a3dc272441d3604d1786a7239c00cd9839ff8e9006cdcabf3a3db4cfd430b2e mark.Card-badge');
+            $(postBadge).fadeIn();
+          }, function(){
+            var postBadge = document.querySelector('#hashit_7a3dc272441d3604d1786a7239c00cd9839ff8e9006cdcabf3a3db4cfd430b2e mark.Card-badge');
+            $(postBadge).fadeOut();
+          }); 
+          // update cookie upon click the post and hide badge immediately
+          for(var i = 0;i < postLinks.length; i++){
+            postLinks[i].onclick = function(){
+              new Postv2('hashit_7a3dc272441d3604d1786a7239c00cd9839ff8e9006cdcabf3a3db4cfd430b2e').update('hashit_6efe040c108562253b2741585e2c4ce8633fbd686bf8bc66134bd212cf028021', function(){
+                console.log('called');
+                var postBadge = document.querySelector('#hashit_7a3dc272441d3604d1786a7239c00cd9839ff8e9006cdcabf3a3db4cfd430b2e mark.Card-badge');
                 $(postBadge).fadeOut();
               });
             }
