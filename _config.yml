@@ -4,11 +4,11 @@
 
 # Site
 title: 標哥
-subtitle: His personal blog :3
-description:
+subtitle:
+description: 標哥の文静博客
 keywords:
 author: lee.wp14
-language:
+language: 
 - en
 - zh-cn
 timezone:
@@ -17,18 +17,18 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://leewp14.github.io/blog
 root: /blog/
-permalink: :year/:month/:day/:title/
+permalink: post/:title/
 permalink_defaults:
 
 # Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
+archive_dir: archive
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -56,15 +56,16 @@ index_generator:
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
+default_category:
 category_map:
 tag_map:
+post: post
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: ll
+date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Pagination
@@ -75,36 +76,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cutie
-
-### Theme Specific Configuration (hexo-theme-cutie)
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: false
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-    - markdown-it-deflist
-  anchors:
-    level: 1
-    collisionSuffix: 'v'
-    permalink: false
-    permalinkClass: header-anchor
-    permalinkSymbol: ""
-    permalinkBefore: false
-archive_generator:
-  per_page: 0
-  yearly: true
-  monthly: false
-  daily: false
+theme: diaspora
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
