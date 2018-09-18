@@ -85,7 +85,7 @@ var Diaspora = {
                     history.replaceState(state, title, url)
                     break;
             }
-            document.title = title;
+            document.title = title + ' - ' + config_title;
             $('#preview').html($(data).filter('#single'))
             switch (flag) {
                 case 'push':
@@ -279,7 +279,7 @@ $(function() {
             if (e.state) location.href = e.state.u;
         })
         Diaspora.player();
-        $('.icon-icon, .image-icon').attr('href', '/')
+        $('.icon-icon, .image-icon').attr('href', config_root)
         $('#top').show()
     }
     $(window).on('scroll', function() {
