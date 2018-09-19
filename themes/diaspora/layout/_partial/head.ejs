@@ -13,7 +13,7 @@ var description = '';
         description += config.description;
     }
     if  (is_post()) {
-        description += ',';
+        description += '. ';
         description += truncate(strip_html(page.content), {length: 100, omission: ','});
     }
 })();
