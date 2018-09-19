@@ -11,9 +11,9 @@ var description = '';
     }
     if (config.description) {
         description += config.description;
-        description += ',';
     }
     if  (is_post()) {
+        description += ',';
         description += truncate(strip_html(page.content), {length: 100, omission: ','});
     }
 })();
