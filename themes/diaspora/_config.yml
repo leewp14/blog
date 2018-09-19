@@ -13,7 +13,7 @@ autoplay: false
 # 默认音乐
 mp3: 
  - https://drive.google.com/uc?export=download&id=1ejBkRf5fMhKmA-5DNw7bGRP4IwLib3ub
- - https://drive.google.com/uc?export=download&id=1e1HfspG3Gk8DwuvKkrnvduSUHQSs8cY1
+#  - https://drive.google.com/uc?export=download&id=1e1HfspG3Gk8DwuvKkrnvduSUHQSs8cY1
   # - http://link.hhtjim.com/163/5146554.mp3
   # - http://link.hhtjim.com/qq/001faIUs4M2zna.mp3
 
@@ -56,4 +56,4 @@ google_analytics:
 favicon: /img/favicon.png
 
 # rss文件
-rss: atom.xml
+rss: # atom.xml
