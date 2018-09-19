@@ -1,4 +1,5 @@
-<%- partial('_partial/head', null, {cache: true}) %>
+<!-- <%- partial('_partial/head', null, {cache: true}) %> -->
+<%- partial('_partial/head', null, {cache: !config.relative_link}) %>
 <body class="loading">
     <div id="loader"></div>
     <%- body %>
