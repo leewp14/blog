@@ -50,7 +50,7 @@ gitalk:
 keywords: lee.wp14
 
 # 要使用google_analytics进行统计的话，这里需要配置ID
-google_analytics: 
+google_analytics: UA-64243736-10
 
 # 网站ico
 favicon: /img/favicon.png
