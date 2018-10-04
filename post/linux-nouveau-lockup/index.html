@@ -11,7 +11,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="lee.wp14,"> 
-    <meta name="description" content="標哥の文静博客"> 
+    <meta name="description" content="標哥の文静博客. 
+又是烦人的一天，电脑用没多久就卡住了。通过nouveau驱动运行Nvidia gpu，一直以来（至今）都有时常卡住的问题。
+我自行上网查看后，总算可以做出一个简单的解决方案总结：
+
+在Chrome,"> 
     <meta name="author" content="lee.wp14"> 
     
     <link rel="icon" href="/blog/img/favicon.png"> 
@@ -35,23 +39,77 @@
 
 <body class="loading">
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                    <p>jesus christ!</p>
-<p>…still under construction la bah!</p>
-
-                </div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">Nouveau驱动卡住啦 :(</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
             </div>
+            <div id="qr"></div>
         </div>
     </div>
+    <div class="scrollbar"></div>
+</div>
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Nouveau驱动卡住啦 :(</h1>
+        <div class="stuff">
+            <span>十月 04, 2018</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/linux/">linux</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/nouveau/">nouveau</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/troubleshooting/">troubleshooting</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p><img src="https://i.loli.net/2018/10/04/5bb5d6d8d01a8.jpg" alt=""></p>
+<p>又是烦人的一天，电脑用没多久就卡住了。通过nouveau驱动运行Nvidia gpu，一直以来（至今）都有时常卡住的问题。</p>
+<p>我自行上网查看后，总算可以做出一个简单的解决方案总结：</p>
+<ol>
+<li><p><strong>在Chrome关掉gpu acceleration</strong><br>很多遇到这个问题的人都是使用chrome/chromium时发生的，主要因为nouveau的3d acceleration不是很好。<br>关闭了以后看视频肯定是会卡的喔 :3</p>
+</li>
+<li><p><strong>在kernel cmd line设置 <code>nouveau.noaccel=1</code></strong><br>这个就关闭了3d acceleration，也是很多人不想要的，因为卡到半死<br>至于有些人说设置<code>nouveau.nofbaccel=1</code>，个人测试了是跟普通没两样，没有什么变化，也没有解决到问题。</p>
+</li>
+<li><p><strong>在kernel cmd line设置 <code>nouveau.modeset=1</code></strong><br>其实照理来讲设置这个是没有用的，modeset=1是代表启用nouveau驱动。不过有个macbook用户运行archlinux的说他设置这个后就没再卡了。我试过了但是无效。</p>
+</li>
+<li><p><strong>换到回nvidia官方驱动</strong><br>这个应该是最实用的方案了。不过可能会弄乱gl libraries，导致有些程序无法正常运行，如Anbox和Steam。</p>
+</li>
+</ol>
+<p>这么刚巧我的电脑就只有Nvidia的显示卡，没有intel内置的。所以的确有点麻烦，而且就是很耗电，一般充满一次只能用大约两小时（新的电池）<br>回想起我的同班同学跟我说过他不用linux的其中原因是因为设置驱动很麻烦，想了想嗯嗯…其实没错哈哈</p>
+<p>今天我就试着上方的第一个方案，看可以耐多久没卡。如果还卡的话就没办法得装到回官方驱动了</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            
+                
+                <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                    <source type="audio/mpeg" src="">
+                </audio>
+                
+                    <ul id="audio-list" style="display:none">
+                        
+                            <li title='0' data-url='https://drive.google.com/uc?export=download&id=1ejBkRf5fMhKmA-5DNw7bGRP4IwLib3ub'></li>
+                        
+                    </ul>
+                
+            
+        </div>
+        
+
+    </div>
+    
 </div>
 
+
+    </div>
+</div>
 </body>
 <script>
     // scripts.ejs >> userscript.ejs
