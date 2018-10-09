@@ -11,7 +11,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="lee.wp14,"> 
-    <meta name="description" content="標哥の文静博客"> 
+    <meta name="description" content="標哥の文静博客. 说好的一天一个post似乎没履行：3 太多功课料 &amp;gt;.&amp;lt;
+从来没想过自己也有需要离开hardware acceleration的日子。以前都是因为电脑显示卡不支持才用software a,"> 
     <meta name="author" content="lee.wp14"> 
     
     <link rel="icon" href="/blog/img/favicon.png"> 
@@ -35,123 +36,69 @@
 
 <body class="loading">
     <div id="loader"></div>
-    <div class="nav">
-    <ul id="menu-menu" class="menu">
-        
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/blog/whoami/" title="Whoami" target="_blank" rel="noopener">Whoami</a>
-        </li>
-        
-        <li class="  menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="https://github.com/leewp14" title="Github" target="_blank" rel="noopener">Github</a>
-        </li>
-        
-        <li class="  menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="https://twitter.com/leewp14" title="Twitter" target="_blank" rel="noopener">Twitter</a>
-        </li>
-        
-    </ul>
-    <p id="copyright">
-        &copy; 2018 lee.wp14.
-        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
-        Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a>
-        by Fechin and modified by lee.wp14
-    </p>
-</div>
-
-<div id="container">
-    
-<div id="screen">
-    <div id="mark">
-        <div class="layer" data-depth="0.4">
-            <img src="https://i.loli.net/2018/10/10/5bbcfc1482827.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
-        </div>
-    </div>
-    <div id="vibrant">
-        <svg viewBox="0 0 2880 1620" height="100%" preserveAspectRatio="xMaxYMax slice">
-            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
-        </svg>
-        <div></div>
-    </div>
-    <div id="header">
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">software acceleration :ooo</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
         <div>
-            <a class="image-logo" href="/"></a>
-            <div class="icon-menu switchmenu"></div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
         </div>
     </div>
-    
-    <div id="post0">
-        <p>十月 10, 2018</p>
-        <h2><a href="/blog/post/living-with-softaccel/" title="software acceleration :ooo" class="posttitle">software acceleration :ooo</a></h2>
-        <p class="summary">说好的一天一个post似乎没履行：3 太多功课料 &gt;.&lt;
-从来没想过自己也有需要离开hardware ...</p>
-    </div>
-    
+    <div class="scrollbar"></div>
 </div>
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">software acceleration :ooo</h1>
+        <div class="stuff">
+            <span>十月 10, 2018</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/linux/">linux</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/nouveau/">nouveau</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/troubleshooting/">troubleshooting</a></li></ul>
 
-    <div id="primary">
+
+        </div>
+        <div class="content markdown">
+            <p>说好的一天一个post似乎没履行：3 太多功课料 &gt;.&lt;</p>
+<p>从来没想过自己也有需要离开hardware acceleration的日子。以前都是因为电脑显示卡不支持才用software acceleration的，现在却是为了解决nouveau驱动的问题：3</p>
+<p>目前为止，我已在我的电脑里的两个app关闭hardware acceleration，即chrome和discord (discord是chrome based的)。还算可以的，至少可以播youtube什么的，不至于很卡。</p>
+<p>重点是，电脑不会再freeze啦！！！在我的测试期间，uptime最久为21小时哟（忘记screenshot haizz） 超满意的！</p>
+<p><img src="https://i.loli.net/2018/10/07/5bba0ee28cbbe.png" alt=""></p>
+<p>测试期间也让我调整调整了我的linux，以及我的mSATA SSD，一直freeze的（你看，我得fix两个问题 累死我了：3）。现在整个电脑运行linux已经很完美了，只是一个东西就是wine弄不到office16：3 如果这个也能走的话我可高兴得不得料</p>
+<p>说到这里，还是很想说，我真的很想念hardware acceleration，现在看60fps卡得不得料 :((</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            
+                
+                <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                    <source type="audio/mpeg" src="">
+                </audio>
+                
+                    <ul id="audio-list" style="display:none">
+                        
+                            <li title='0' data-url='https://drive.google.com/uc?export=download&id=1ejBkRf5fMhKmA-5DNw7bGRP4IwLib3ub'></li>
+                        
+                    </ul>
+                
+            
+        </div>
         
-<div class="post">
-    <a href="/blog/post/linux-nouveau-lockup/" title="Nouveau驱动卡住啦 :(">
-        <img src="https://i.loli.net/2018/10/04/5bb5e10b2bace.jpeg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>十月 04, 2018</p>
-        <h3><a href="/blog/post/linux-nouveau-lockup/" title="Nouveau驱动卡住啦 :(" class="posttitle">Nouveau驱动卡住啦 :(</a></h3>
-        <p>
-又是烦人的一天，电脑用没多久就卡住了。通过nouveau驱动运行Nvidia gpu，一直以来（至今）都有时常卡住的问题。
-我自行上网查看后，总算可以做...</p>
-    </div>
-</div>
-
-
-<div class="post">
-    <a href="/blog/post/blog-intro/" title="简介">
-        <img src="https://i.loli.net/2018/10/03/5bb4a8bb80f78.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>十月 03, 2018</p>
-        <h3><a href="/blog/post/blog-intro/" title="简介" class="posttitle">简介</a></h3>
-        <p>小时候上网看到网站，自己也想要一个。长大后有了网站，却不会珍惜。一次又一次换设计，唯独没有po文。似乎很浪费？于是决定了 今日起每天po文一个 :3
-
-今...</p>
-    </div>
-</div>
-
-
-<div class="post">
-    <a href="/blog/post/hello-world/" title="Hello World">
-        <img src="https://i.loli.net/2018/10/03/5bb4947554fe0.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>十二月 14, 2001</p>
-        <h3><a href="/blog/post/hello-world/" title="Hello World" class="posttitle">Hello World</a></h3>
-        <p>Welcome to Hexo! This is your very first post. Check documentation for more i...</p>
-    </div>
-</div>
-
-
-<div class="post">
-    <a href="/blog/post/markdown-cheatsheet/" title="Markdown Cheatsheet">
-        <img src="/blog/img/cover.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>十二月 06, 2001</p>
-        <h3><a href="/blog/post/markdown-cheatsheet/" title="Markdown Cheatsheet" class="posttitle">Markdown Cheatsheet</a></h3>
-        <p>
-注：原文摘自网上
-
-Installation
-This post uses hexo-renderer-markdown-it plugin as ma...</p>
-    </div>
-</div>
-
 
     </div>
     
 </div>
-<div id="preview"></div>
 
+
+    </div>
+</div>
 </body>
 <script>
     // scripts.ejs >> userscript.ejs
