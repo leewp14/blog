@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en,zh-cn,default" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>標哥</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="lee.wp14,"> 
+    <meta name="description" content="標哥の文静博客. 这po文主要会以英文呈现，因为含有技术性的东西用中文写好像挺麻烦的:3
+This post is particularly written for Malaysians who are using ,"> 
+    <meta name="author" content="lee.wp14"> 
+    
+    <link rel="icon" href="/blog/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/blog/css/diaspora.css">
+    
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64243736-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64243736-10');
+</script>
+
+
+
+</head>
+
+<body class="loading">
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">OpenWRT stable on TM/Unifi D-Link DIR-615 rev.G2</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">OpenWRT stable on TM/Unifi D-Link DIR-615 rev.G2</h1>
+        <div class="stuff">
+            <span>四月 29, 2019</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/custom/">custom</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/networking/">networking</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/blog/tags/openwrt/">openwrt</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>这po文主要会以英文呈现，因为含有技术性的东西用中文写好像挺麻烦的:3</p>
+<p>This post is particularly written for Malaysians who are using Unifi since the early release of TM’s Unifi as a FTTH service. </p>
+<p>Normally, for every Unifi users, you will receive a FTU (Fiber Termination Unit) and a minimum of Wireless-N Router. </p>
+<p>For early Unifi adoption users, you most likely should receive a white-orange coloured D-Link DIR-615 as your wireless router, which has a hardware revision <code>G2</code>. </p>
+<p>If you are looking for ways to further optimize your ‘old’ ‘rubbish’ ‘shitty’ DIR-615, this post is for you!</p>
+<p><strong>Introduction</strong><br>TM/Unifi’s D-Link DIR-615 rev.G2 is actually a DIR-620 rev.A1 . You can refer to the pictures below and maybe, you can compare with DIR-620 A1 teardown pictures on Google. Normally if you have a look at the chip you will know already, because the SoC chip, ROM and RAM chip is similar to DIR-620 A1. </p>
+<blockquote>
+<p><a href="https://openwrt.org/toh/d-link/dir-620" target="_blank" rel="noopener">https://openwrt.org/toh/d-link/dir-620</a><br><a href="https://wikidevi.com/wiki/D-Link_DIR-620_rev_A1" target="_blank" rel="noopener">https://wikidevi.com/wiki/D-Link_DIR-620_rev_A1</a></p>
+</blockquote>
+<p><img src="https://i.loli.net/2019/04/29/5cc6c28a4ce7e.jpg" alt="DSC_0092.JPG"><br><img src="https://i.loli.net/2019/04/29/5cc6c29665e98.jpg" alt="DSC_0091.JPG"><br><img src="https://i.loli.net/2019/04/29/5cc6c2ab8ece1.jpg" alt="DSC_0089.JPG"><br><img src="https://i.loli.net/2019/04/29/5cc6c2a4cf588.jpg" alt="DSC_0090.JPG"><br><img src="https://i.loli.net/2019/04/29/5cc6c2ad975db.jpg" alt="DSC_0088.JPG"><br><img src="https://i.loli.net/2019/04/29/5cc6c2c4cde9c.jpg" alt="DSC_0085.JPG"><br><img src="https://i.loli.net/2019/04/29/5cc6c2bda1966.jpg" alt="DSC_0087.JPG"><br><img src="https://i.loli.net/2019/04/29/5cc6c299b8824.jpg" alt="DSC_0080.JPG"><br><img src="https://i.loli.net/2019/04/29/5cc6c2b0d26b4.jpg" alt="DSC_0081.JPG"><br><img src="https://i.loli.net/2019/04/29/5cc6c2ab49711.jpg" alt="DSC_0078.JPG"></p>
+<p><strong>Flashing</strong><br>Oh dude, this is what makes me headache+laugh…</p>
+<p>Simple googling shows that a lot of ‘Malaysia Citizenssss’ tell users to use the DIR-615 rev.D OpenWRT firmwares on their DIR-615 G2. </p>
+<p>No offense, they both use the same SoC, but come on dudes, 615 rev.D only has 4MB of flash!</p>
+<p>I know, I know, yes it works, I already said no offense :3</p>
+<p>OK, proceed to flashing. Now, please assume that your device is DIR-620 A1, to make things easier here xD</p>
+<p>To flash you need to enter the Emergency flashing mode. According to DIR-620 OpenWRT wiki (link above), revision A1 does not have this feature while D1 has this feature. Since our 615 G2 has this feature, just follow the instructions for 615 D series over <a href="https://openwrt.org/toh/d-link/dir-615#rev_d1_d2_d3_d4_d5" target="_blank" rel="noopener">here</a>, which is pretty straightforward. </p>
+<p><strong>Flashing Again</strong><br>Yes, you need to do another flashing! I confirmed that if you use the DIR-615 rev.D OpenWRT images, you only has 4MB of storage! Ridiculous lol xDD</p>
+<p>So, the next thing we want to do is to flash this DIR-615 to DIR-620 A1. Download the latest OpenWRT image <a href="http://downloads.openwrt.org/releases/18.06.1/targets/ramips/rt305x/openwrt-18.06.1-ramips-rt305x-dir-620-a1-squashfs-sysupgrade.bin" target="_blank" rel="noopener">here</a> and flash from the LuCI interface. </p>
+<p><strong>Celebrate? Noooo, not yet, not so fast…</strong><br>Now you have your “rebranded” D-Link DIR-620 A1 <strong>with 8MB of storage</strong> instead of four :sunglasses:</p>
+<p><img src="https://i.loli.net/2019/04/29/5cc6ceac3d7c1.png" alt="Screenshot_2019-04-29_18-14-33.png"></p>
+<p>Note: according to <a href="https://www.leowkahman.com/2018/03/09/lede-on-unifi-d-link-dir-615-g2/" target="_blank" rel="noopener">this guy</a>, he only have 300kb free storage, which is pretty obvious because a few MBs are needed for the firmware. But for our case, we have nearly 4MB of free storage! (I installed quite a number of things already, so you should have roughly about 4.1MB or more out of the box actually)</p>
+<p><img src="https://i.loli.net/2019/04/29/5cc6cf397459e.png" alt="Screenshot_2019-04-29_18-17-10.png"></p>
+<p>…which means, we can do much more things!</p>
+<ul>
+<li>ok, why we have 8MB instead of 4MB which other people has, is because we are using the <strong>correct</strong> firmware. 620 A1 is using 8MB flash, 615 Dx is using 4MB flash. So while 615 Dx firmwares is working on our 615 G2, we only use half of our flash storage which is 4MB out of 8MB as the firmware is configured for the 615 Dx 4MB flash, so you only have 300kb free storage out of the box instead. </li>
+</ul>
+<p><strong>標哥 OpenWRT Secret Recipie :3</strong></p>
+<ol>
+<li><p>Because I’m going to college at other states soon, so I configured <strong>DDNS/Dynamic DNS <code>luci-app-ddns</code></strong> on this router. In case something happens, I can ssh into my router to help my family troubleshoot (if the internet connection is unaffected). I’m using <a href="nsupdate.info">nsupdate</a> for the DDNS service (it’s free!). </p>
+</li>
+<li><p>Because I want to use SSH over public IP, thus I installed <strong><code>luci-ssl</code></strong> to ensure my connection to the router is always encrypted (always HTTPS when login into router). *NOTE: restart uhttpd after installation and wait 5-8 minutes before accessing your router again, because it needs some time to generate the HTTPS certificate</p>
+</li>
+<li><p>Because I’m not a Unifi user (I got this router from my dad’s friend), so I have been searching for solutions to solve the slow download when upload problem, which exists on every copper line internet users (I’m currently using Streamyx 8MBPS). Which basically means, the internet download speed is so slow when something is being uploaded at the same time. So I found out something called <strong><code>luci-app-sqm</code></strong>. Basically this thing does QoS, but in a more efficient way. With this, I can now basically upload videos and watching youtube full HD simultaneously without any slowdowns at all. <strong>SUPER EFFICIENT</strong><br>This is extremely useful for Streamyx users. Highly recommemded, satisfication guranteed. </p>
+</li>
+</ol>
+<p><strong>Footer</strong><br>Nothing to say, this is quite an interesting one. Have been using this thing for months (previously my house is using the TrendNET TEW-431BRP), overall is very satisfied. That’s all, feel free to contact me for any question at <a href="mailto:`lee.wp14@gmail.com" target="_blank" rel="noopener">`lee.wp14@gmail.com</a>`. Thanks for reading!</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            
+                
+                <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                    <source type="audio/mpeg" src="">
+                </audio>
+                
+                    <ul id="audio-list" style="display:none">
+                        
+                            <li title='0' data-url='https://drive.google.com/uc?export=download&id=1ejBkRf5fMhKmA-5DNw7bGRP4IwLib3ub'></li>
+                        
+                    </ul>
+                
+            
+        </div>
+        
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script>
+    // scripts.ejs >> userscript.ejs
+    var config_title = '標哥';
+    var config_root = '/blog/';
+</script>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/blog/js/plugin.js"></script>
+<script src="/blog/js/diaspora.js"></script>
+<link rel="stylesheet" href="/blog/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/blog/photoswipe/default-skin/default-skin.css">
+<script src="/blog/photoswipe/photoswipe.min.js"></script>
+<script src="/blog/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</html>
